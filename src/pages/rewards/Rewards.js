@@ -6,12 +6,12 @@ import Header from '../../components/header/Header';
 import Menu from '../../components/menu/Menu';
 
 class Rewards extends Component {
-    constructor(props) {
-        super(props);
-        // if (!localStorage.getItem('userSession') && !localStorage.getItem('userName')) {
-        //     this.props.history.push('/login');
-        // }
-    }
+    // constructor(props) {
+    //     super(props);
+    //     if (!localStorage.getItem('userSession') && !localStorage.getItem('userName')) {
+    //         this.props.history.push('/login');
+    //     }
+    // }
 
     closeSession() {
         localStorage.removeItem('userSession');

@@ -22,7 +22,7 @@ class Error404 extends Component {
                             <div className="col-sm-6">
                                 <div id="info">
                                     <p>
-                                        <a href="#" >a</a>&nbsp;&nbsp;
+                                        <a href="www.bryanrogel.com" >a</a>&nbsp;&nbsp;
                                         <a href="mailto:info@bryanrogel.com" >
                                             <i className="fa fa-envelope-o"></i>
                                         </a>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import moment from 'moment';
 
-import Header from '../../components/header/Header';
+// import Header from '../../components/header/Header';
 import Menu from '../../components/menu/Menu';
 import TextPointTableMaker from '../../components/textPointTableMaker/TextPointTableMaker';
 import FirstGoalTableMaker from '../../components/firstGoalTableMaker/FirstGoalTableMaker';
