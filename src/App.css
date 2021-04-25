@@ -1,0 +1,1377 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.team-logo {
+  height: 6vw;
+  padding: 0 5px;
+}
+
+.team-logo-wrapper {
+  width: 100%;
+  margin: 1vw 0 !important;
+}
+
+.font-team {
+  font-weight: 600;
+  font-size: 2vw;
+}
+.container {
+  padding: 2rem 0rem;
+  /* max-width: 100% !important; */
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767.5px) {
+  .col-sm-12 {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 575.5px) {
+  .col-12 {
+    padding: 0;
+  }
+}
+
+
+/* llave */
+
+.grupo h2 {
+  font-size: 16px;
+  color: #fff;
+  background-color: #555555;
+  padding: 10px;
+  margin: 0;
+  text-shadow: 2px 2px 5px #333;
+}
+
+.grupo .equipos {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+}
+
+.grupo .equipos .table {
+  margin-bottom: 0;
+  border: solid 3px #fff;
+}
+
+.grupo .equipos .table td {
+  padding: 0;
+}
+
+.grupo .equipos .table td span {
+  font-size: 16px;
+}
+
+.grupo .equipos .equipo-nombre {
+  padding: 10px;
+}
+
+.grupo .equipos .equipo-nombre .nombre-pais {
+  font-weight: 700;
+}
+
+.grupo .equipos .equipo-nombre .btn-group {
+  float: right;
+}
+
+.campeon .equipo {
+  height: 200px;
+}
+
+.equipo {
+  height: 100px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.equipo .gname {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 5px #333;
+}
+
+.clasificado {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 25%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #666;
+}
+
+.vertical {
+  border: solid 10px #fff;
+  margin-bottom: 20px;
+}
+
+.vertical .br {
+  border-right: solid 1px #fff;
+}
+
+.vertical .bl {
+  border-left: solid 1px #fff;
+}
+
+.vertical .bb {
+  border-bottom: solid 1px #fff;
+}
+
+.vertical .bt {
+  border-top: solid 1px #fff;
+}
+
+.vertical .campeon .equipo .flag-equipo {
+  top: 35%;
+}
+
+.vertical .equipo .flag-equipo {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.vertical .equipo .flag-equipo img {
+  box-shadow: 3px 3px 5px #333;
+  border: solid 3px #fff;
+}
+
+.vertical .equipo .flag-equipo.match img {
+  border: solid 3px yellowgreen;
+}
+
+.vertical .equipo .flag-equipo.error img {
+  border: solid 3px darkred;
+}
+
+.vertical .equipo .nom-pais {
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+  position: relative;
+  top: 5px;
+  box-shadow: 3px 3px 5px #333;
+}
+
+.vertical .equipo .nom-pais.match {
+  background-color: yellowgreen;
+  color: #002e05;
+}
+
+.vertical .equipo .nom-pais.error {
+  background-color: darkred;
+  color: #fff;
+}
+
+.etiqueta-fase {
+  text-transform: uppercase;
+  color: #fff;
+  height: 100px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 120px;
+  text-shadow: 2px 2px 3px #333;
+}
+
+.octavos {
+  background-color: #2e9d39;
+}
+
+.cuartos {
+  background-color: #1c8227;
+}
+
+.semifinal {
+  background-color: #0d6717;
+}
+
+.final {
+  background-color: #004f08;
+}
+
+.campeon,
+.tercer-lugar {
+  background-color: #002e05;
+}
+
+.partido-nombre {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  background-color: rgba(6, 75, 0, 0.75);
+}
+
+.llave-fase h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.e-click:hover {
+  cursor: pointer;
+}
+
+.e-click .flag-equipo:hover img {
+  border-color: orangered;
+}
+
+.e-click .flag-equipo:hover .nom-pais {
+  background-color: orangered;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  #llave h2 {
+    font-size: 13px;
+  }
+  .etiqueta-fase {
+    height: 50px;
+    font-size: 1rem;
+    line-height: 70px;
+  }
+  .clasificado {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 25%;
+    text-align: center;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+  }
+  .vertical {
+    border: solid 5px #fff;
+  }
+  .vertical .nom-pais {
+    display: none;
+  }
+  .vertical .equipo {
+    height: 50px;
+    font-size: 1rem;
+  }
+  .vertical .equipo .flag-equipo {
+    top: 10%;
+  }
+  .vertical .campeon .equipo {
+    height: 100px;
+  }
+  .vertical .campeon .equipo .flag-equipo {
+    top: 30%;
+  }
+}
+
+/* Login */
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i");
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+html {
+  height: 100%;
+}
+
+form {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#login-form {
+  background-color: rgba(239, 34, 34, 0.8);
+  border-radius: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 3px #555;
+}
+
+#login {
+  padding-top: 50px;
+}
+
+#logo-quinela {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+#info {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #323232;
+}
+
+#info a {
+  color: #fff;
+}
+
+#info a:visited {
+  color: #fff;
+}
+
+#info a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#registro-acceso {
+  padding: 0 5px;
+  text-align: right;
+}
+
+.table {
+  background-color: #fff;
+  font-size: 2vw;
+  text-align: center;
+  border: solid 10px #fff;
+  border-collapse: collapse;
+  border-radius: 50px;
+  overflow: hidden;
+  width: 100% !important;
+  margin: auto;
+}
+
+.table thead {
+  border: 0;
+}
+
+.table thead th {
+  border-bottom: none;
+  padding-top: 2vw;
+}
+
+.table tbody {
+  background-color: #fff;
+}
+/* 
+.table tbody tr {
+  border-collapse: inherit;
+  border-radius: 25px 25px 0 0;
+  background-color: #fff;
+} */
+
+.table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.table td, .table th {
+  border-top: none;
+  padding: 0;
+}
+
+#ir-a-registro {
+  font-size: 1.5rem;
+  box-shadow: 3px 3px 10px #111;
+  float: right;
+  /* position:relative;
+    top: 80px;
+    z-index: 999; */
+}
+
+.modal-header {
+  color: #fff;
+  background-color: #FF0B12;
+}
+
+.modal-header .modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.modal-body p {
+  font-size: 1rem;
+}
+
+
+/* Mantenimiento */
+
+.mantenimiento {
+  background-color: rgba(239, 34, 34, 0.8);
+  color: #fff;
+  text-shadow: 2px 2px 3px #555;
+  padding: 20px;
+  text-align: center;
+}
+
+.mantenimiento h2 {
+  color: yellow;
+  font-size: 2.5rem;
+}
+
+.mantenimiento p {
+  font-size: 1.5rem;
+}
+
+/* Stats  */
+.icono-pais {
+  cursor: pointer;
+}
+
+.icono-pais:hover {
+  cursor: pointer;
+}
+
+.titulo-tabla {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px #000;
+}
+
+h1.data {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #6149AF;
+  font-weight: 700;
+}
+
+h4.grupo-nombre {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #a40005;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 0;
+}
+
+.separador-gol {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.gol {
+  text-shadow: 2px 2px 3px #000;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3rem;
+  padding: 10px 20px;
+  background-color: #1062a4;
+  border: solid 3px #fff;
+}
+
+.nombre-partido {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 3rem;
+  padding: 20px 0;
+}
+
+.partido {
+  text-align: center;
+  background-color: #;
+  margin-bottom: 20px;
+  color: #fff;
+  border: solid 10px #fff;
+  cursor: pointer;
+}
+
+.partido:hover {
+  cursor: pointer;
+}
+
+.partido:hover .equipos-partido {
+  background-color: #051c2f;
+}
+
+.partido .equipos-partido {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #;
+}
+
+.partido .fecha {
+  padding: 10px;
+  background-color: #072a47;
+}
+
+.partido .icono-pais {
+  font-size: 2.25rem;
+}
+
+.partido .icono-pais img {
+  border: solid 3px #fff;
+  box-shadow: 2px 2px 3px #000;
+}
+
+.partido .penales .et {
+  font-weight: 700;
+}
+
+.partido .et,
+.partido .penal {
+  font-size: 1rem;
+}
+
+.partido .et.data,
+.partido .penal.data {
+  font-weight: 700;
+}
+
+.partido .goles {
+  padding-bottom: 20px;
+}
+
+.flag-equipo, .img-pais-flag {
+  border: solid 3px #fff;
+  box-shadow: 2px 2px 3px #000;
+}
+
+.vs {
+  font-size: 1.25rem !important;
+}
+
+#partido-nombre {
+  text-align: center;
+}
+
+#ingresoEstadisticas {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+
+#ingresoEstadisticas label {
+  font-weight: 700;
+  color: #;
+}
+
+.grupos.table {
+  font-size: 1rem;
+}
+
+#select-estadisticas, #select-fase {
+  font-size: 1.75rem;
+  height: 55px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  #menu-principal {
+    margin-top: 150px;
+  }
+  #menu-principal ul li div {
+    padding: 100px 20px 20px;
+    font-size: 1.05rem;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .gol {
+    font-size: 1.25rem;
+    padding: 5px;
+  }
+  .partido .icono-pais {
+    font-size: 1.25rem;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  h1.data {
+    font-size: 2.5rem;
+  }
+  .gol {
+    font-size: 1.25rem;
+    padding: 5px;
+  }
+  .partido .icono-pais {
+    font-size: 1.25rem;
+  }
+  .nombre-partido {
+    font-size: 1.25rem;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  h1.data {
+    font-size: 2.25rem;
+  }
+  .gol {
+    font-size: 1.75rem;
+    padding: 5px;
+  }
+  .partido .icono-pais {
+    font-size: 1rem;
+  }
+  .nombre-partido {
+    font-size: 1.75rem;
+  }
+}
+
+.send-data {
+  width: 120px;
+  height: 45px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  background-color: #;
+  border-color: #fff;
+}
+
+.send-data:hover {
+  font-weight: bold;
+  color: #09385E;
+  background-color: #fff;
+  border-color: #09385E;
+}
+
+/* styles */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i");
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #37e4fd;
+  color: #000140;
+  font-weight: 700;
+}
+
+.bgblue1 {
+  background-color: #37e4fd;
+}
+
+.bgblue2 {
+  background-color: #000140;
+}
+
+.bgblue3 {
+  background-color: #0059ac;
+}
+
+.bgblack {
+  background-color: #000;
+}
+
+.bgred {
+  background-color: #FF0B12;
+}
+
+.bgreddark {
+  background-color: #f429ea;
+  color: #fff;
+}
+
+.bggreen {
+  background-color: #179c05;
+  color: #fff !important;
+}
+
+.bgorange {
+  background-color: #ff9900 !important;
+}
+
+.bggray1 {
+  background-color: #bbb !important;
+}
+
+.bggray2 {
+  background-color: #999 !important;
+}
+
+.bggray3 {
+  background-color: #666;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  background-size: cover;
+  /* background-image: url("./assets/images/uefa-bg-header.jpg"); */
+  /* background-image: url("./assets/images/bg-web.jpg"); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F6F5F9;
+  padding: 0 20px;
+}
+
+#menu-superior ul {
+  list-style: none;
+  text-align: right;
+  padding: 5px;
+  margin: 0;
+  background-color: #6149AF;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 3px 3px 10px #000;
+}
+
+#menu-superior ul li {
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+#menu-superior ul div {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#menu-superior ul div .pts {
+  background-color: darkorange;
+  padding: 5px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#menu-principal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+#menu-principal ul li {
+  display: inline-block;
+}
+
+#menu-principal ul li div {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+#menu-principal ul li #link-web {
+  background-image: url("./assets/images/icon.png");
+}
+
+#menu-principal ul li #enlace-reglas {
+  background-image: url("./assets/images/reglas.png");
+}
+
+#menu-principal ul li #enlace-clasificacion {
+  background-image: url("./assets/images/ranking.png");
+}
+
+#menu-principal ul li #enlace-novedades {
+  background-image: url("./assets/images/novedades.png");
+}
+
+#menu-principal ul li #enlace-premios {
+  background-image: url("./assets/images/premios.png");
+}
+
+#menu-principal ul li #enlace-estadisticas {
+  background-image: url("./assets/images/estadisticas.png");
+}
+
+.titulo-seccion {
+  padding-top: 50px;
+}
+
+.logoDashboard {
+  height: 170px;
+  filter: invert(1);
+}
+
+@media (max-width: 475px) {
+  .logoDashboard {
+    height: 100px;
+  }
+}
+
+.titulo-seccion h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #6149AF;
+  margin: 0;
+}
+
+.sub-titulo-seccion {
+  margin-top: 100px;
+}
+
+.sub-titulo-seccion h2 {
+  text-align: center;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  text-shadow: 3px 3px 8px #000;
+}
+
+#faseGrupos {
+  margin-bottom: 0;
+}
+
+.scores {
+  text-align: center;
+  color: #fff;
+}
+
+.scores h3 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37e4fd+0,000140+29,000140+99 */
+  background: #37e4fd;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #37e4fd 0%, #000140 29%, #000140 99%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #37e4fd 0%, #000140 29%, #000140 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #37e4fd 0%, #000140 29%, #000140 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37e4fd', endColorstr='#000140', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  margin: 0;
+  text-transform: uppercase;
+  padding: 5px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.scores h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 0;
+  font-size: 1.25rem;
+  margin: 0 10px 0 10px;
+  text-align: left;
+}
+
+.seccion-preguntas {
+  padding-top: 50px;
+}
+
+.seccion-preguntas .grupo-preguntas {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.seccion-preguntas .grupo-preguntas label {
+  font-weight: 700;
+  color: purple;
+}
+
+.seccion-preguntas label {
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.seccion-preguntas h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.seccion-preguntas .form-group label {
+  margin-top: 20px;
+}
+
+.seccion-preguntas .form-group .valor-pregunta {
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.seccion-preguntas .form-group .valor-pregunta .pts-tag {
+  font-size: 13px;
+}
+
+.table {
+  font-size: 1, .25rem;
+  background-color: #fff;
+  text-align: center;
+  border: solid 10px #fff;
+}
+
+.table thead {
+  background-color: #ffffff;
+  border: 0;
+  color: #6149AF;
+}
+
+.table tbody {
+  background-color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+#tfg-resultados {
+  font-weight: 700;
+  text-align: center;
+  min-height: 1347px;
+}
+
+#tfg-resultados .equipo img {
+  max-width: 35px;
+}
+
+#tfg-resultados .equipo br {
+  display: none;
+}
+
+#tfg-resultados tr td {
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+
+#tfg-resultados .equipo {
+  height: auto !important;
+  font-weight: 400;
+  border: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+#seccion-boton-enviar {
+  text-align: center;
+}
+
+.boton-enviar-fase {
+  text-align: center;
+}
+
+.boton-enviar-fase .btn {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 20px;
+  box-shadow: 5px 5px 25px #111;
+}
+
+.btn-fg {
+  padding-top: 60px;
+  font-weight: 700;
+  word-break: break-all;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+
+.puntaje-fase {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: #fff;
+  padding: 0 10px;
+  color: #09385e;
+}
+
+.col-puntajes {
+  text-align: right;
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+
+.resp-show {
+  font-weight: 700;
+  padding: 10px;
+  overflow: auto;
+  text-shadow: 3px 3px 5px #000;
+  border: solid 3px #fff;
+}
+
+.resp-show span:last-child {
+  display: none;
+}
+
+.resp-show img {
+  border: solid 3px #fff;
+  box-shadow: 3px 3px 5px #000;
+}
+
+.detalle-puntaje-preguntas {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.label-resp {
+  text-transform: uppercase;
+}
+
+.icono-pais-resp {
+  float: right;
+  margin-right: 10px;
+}
+
+.icono-pais-resp:first-child {
+  margin-right: 0;
+}
+
+.scores {
+  margin-bottom: 20px;
+  border-bottom: solid 10px #fff;
+  box-shadow: 3px 3px 5px #09385e;
+}
+
+.grupo {
+  margin-bottom: 20px;
+}
+
+.boton-enviar-fase {
+  padding-top: 50px;
+}
+
+.modal-header {
+  color: #fff;
+  background-color: #FF0B12;
+}
+
+.modal-header .modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.modal-body img {
+  margin: 0 auto;
+}
+
+.modal-body p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.modal-body strong {
+  color: #fff;
+  background-color: #00294F;
+  padding: 0 5px;
+}
+
+.p1-sep {
+  border-top: solid 1px #aaa;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.fase-mensaje {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.fase-mensaje .btn {
+  font-size: 2rem;
+  box-shadow: 5px 5px 25px #111;
+  font-weight: 700;
+}
+
+#tabla-reglas {
+  text-align: left;
+}
+
+.num-reglas {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.td-num {
+  background-color: #333;
+  color: darkorange;
+}
+
+#tabla-clasificacion_filter,
+#tabla-clasificacion_length,
+#tabla-clasificacion_info {
+  color: #fff;
+}
+
+.txt {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.anuncio-pts-extra {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  border-top: solid 2px #37e4fd;
+  border-bottom: solid 2px #f429ea;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37e4fd+0,000140+29,000140+99 */
+  background: #37e4fd;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #37e4fd 0%, #000140 29%, #000140 99%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #37e4fd 0%, #000140 29%, #000140 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #37e4fd 0%, #000140 29%, #000140 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37e4fd', endColorstr='#000140', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border-radius: 5px;
+}
+
+.espacio-marcadores {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.espacio-marcadores h2 {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 20px;
+}
+
+.espacio-marcadores .col-sm-6 form {
+  margin-bottom: 20px;
+  border-bottom: solid 3px #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.espacio-marcadores .col-sm-6 form:last-child {
+  border-bottom: 0;
+}
+
+.espacio-marcadores .table tbody {
+  color: #212529;
+  font-weight: 400;
+}
+
+.espacio-marcadores .table tbody strong {
+  display: block;
+  background-color: #fff;
+}
+
+.espacio-marcadores .icono-pais {
+  margin-bottom: 20px;
+}
+
+.espacio-marcadores .icono-pais img {
+  border: solid 3px #fff;
+  box-shadow: 3px 3px 5px #000;
+}
+
+.espacio-marcadores input {
+  text-align: center;
+  font-size: 26px;
+}
+
+.grupo-preguntas select.form-control {
+  border-radius: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: solid 2px #000140;
+  background: none;
+  color: #000140;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.grupo-preguntas select.form-control:focus, .grupo-preguntas select.form-control:active {
+  background: none;
+  color: #000140;
+}
+
+.grupo-preguntas select.form-control:disabled {
+  background: none;
+  color: #888;
+  border-bottom: solid 2px #888;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) {
+  #menu-principal {
+    margin-top: 30px;
+  }
+  #menu-principal ul li div {
+    padding: 100px 20px 20px;
+    font-size: 1.05rem;
+  }
+  .btn-fg.btn-secondary {
+    width: 104px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #menu-principal {
+    margin-top: 30px;
+  }
+  #menu-principal ul li div {
+    padding: 100px 20px 20px;
+    font-size: 1.05rem;
+  }
+  .btn-fg.btn-secondary {
+    width: 90px;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #menu-principal {
+    position: relative;
+    top: 30px;
+  }
+  #menu-principal ul li div {
+    padding: 80px 10px 10px;
+    font-size: 1.5rem;
+  }
+  .btn-fg.btn-secondary {
+    width: 70px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  #menu-principal {
+    position: relative;
+    top: 30px;
+  }
+  #menu-principal ul li div {
+    padding: 75px 10px 10px;
+    font-size: 1.25rem;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .table {
+    font-size: 1rem;
+  }
+  #tfg-resultados {
+    font-size: 1.5rem;
+  }
+  #menu-principal {
+    position: relative;
+    top: 30px;
+  }
+  #menu-principal ul li div {
+    padding: 65px 10px 10px;
+    font-size: 1.25rem;
+  }
+  #btn-enviar-predicciones {
+    font-size: 2rem;
+  }
+  .titulo-seccion h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .mobile-navbar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .mobile-col {
+    max-width: 100%;
+  }
+  .boton-enviar-fase .btn {
+    font-size: 1.25rem;
+    padding: 10px;
+    box-shadow: 3px 3px 10px #111;
+  }
+  .table {
+    font-size: 1rem;
+  }
+  #tfg-resultados {
+    font-size: 1rem;
+  }
+  #menu-principal ul li div {
+    padding: 75px 10px 10px;
+    font-size: 12px;
+  }
+  #menu-principal ul {
+    text-align: center;
+  }
+  #btn-enviar-predicciones {
+    font-size: 1.5rem;
+  }
+  .titulo-seccion h2 {
+    font-size: 2rem;
+  }
+  .logoDashboard {
+    margin-top: 20px;
+  }
+}
+
+.ball {
+  background-image: url("./assets/images/logo-white.png");
+}
+
+.error-text {
+  color: #ff3232 !important;
+}
+
+.custom-control {
+  padding: 0;
+}
+
+/* Button */
+
+.button-style {
+  background-color: #6149AF;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.button-style:hover {
+  background-color: #ffffff;
+  border-color: #6149AF;
+  color: #6149AF;
+}
+
+.button-style:not(:disabled):not(.disabled).active:focus, .button-style:not(:disabled):not(.disabled):active:focus, .show>.button-style.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.button-style:not(:disabled):not(.disabled).active, .button-style:not(:disabled):not(.disabled):active, .show>.button-style.dropdown-toggle {
+  background-color: #6149AF;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
